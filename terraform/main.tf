@@ -3,9 +3,9 @@ data "ibm_resource_group" "group" {
   name = "default"
 }
 
-# retrieve data for my Cloud Object Storage instance
+# retrieve data for the Cloud Object Storage instance
 data "ibm_resource_instance" "COS_instance" {
-  name              = "hlCOS"
+  name              = var.cos_instance_name
   location          = "global"
   resource_group_id = data.ibm_resource_group.group.id
   service           = "cloud-object-storage"

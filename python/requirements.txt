@@ -1,0 +1,3 @@
+ibm_cos_sdk==2.12.0
+ibm_cos_sdk_core==2.12.0
+python-dotenv==0.20.0
