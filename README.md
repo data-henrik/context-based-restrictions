@@ -1,4 +1,4 @@
-# Tests of IBM Cloud context-based-restrictions security feature
+# Tests of IBM Cloud context-based-restrictions (CBR) security feature
 This repository holds files for testing context-based restrictions in IBM Cloud.
 
 
@@ -12,6 +12,8 @@ Access from Code Engine succeeds:
 Access from another compute environment fails. Access is denied:
 ![access from other environment is denied](images/CBR_denied.png)
 
+## Deploy CBR network zone and access rule with Terraform
+See the files in [terraform](terraform). Adapt the file [terraform.tfvars](terraform/terraform.tfvars) to your IBM Cloud API key and the name of the Cloud Object Storage instance.
 
-### License
+## License
 See the [LICENSE](LICENSE) file.
